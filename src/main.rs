@@ -88,7 +88,7 @@ fn format_columns(lines: &[String], left_align_numeric: bool) -> String {
         let mut line = String::new();
         for (j, column) in columns.iter().enumerate() {
             if i < column.len() {
-                let align_left = left_align_numeric && is_numeric[j] && i > 0; // Don't right-align header
+                let align_left = !is_numeric[j] ||(left_align_numeric && is_numeric[j] && i > 0); // Don't right-align header
                 let formatted = if align_left {
                     format!("{:<width$}", column[i], width = max_widths[j])
                 } else {

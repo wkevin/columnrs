@@ -1,13 +1,13 @@
 [package]
 name = "columnrs"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["wkevin <wkevin27@gmail.com>"]
 edition = "2021"
 description = "A command-line tool for formatting tabular data into columns table"
 license = "MIT"
 repository = "https://github.com/wkevin/columnrs"
 readme = "README.md"
-keywords = ["cli", "formatting", "columns", "tabular"]
+keywords = ["cli", "formatting", "column", "tabular"]
 categories = ["command-line-utilities"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
